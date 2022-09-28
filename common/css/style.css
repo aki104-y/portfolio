@@ -317,8 +317,9 @@ progress {
   cursor: default;
 }
 
-/* 共通部分
------------------------------------------------------- */
+/*----------------------------------------
+	共通部分
+----------------------------------------*/
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -331,16 +332,16 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 a {
-  color: #341E12;
+  color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #A88E25;
+  color: #C8EFEA;
 }
 
 img {
@@ -364,8 +365,6 @@ img {
   }
 }
 
-/* header-nav
------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .header-nav {
     display: flex;
@@ -398,5 +397,85 @@ img {
 }
 .footer__inner .copyright {
   color: white;
+}
+
+/* swiper
+------------------------------------------------------ */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 39px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .swiper-button-next,
+.swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    top: 335px;
+  }
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+@media screen and (min-width: 992px) {
+  .swiper-button-prev {
+    left: -30px;
+  }
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+@media screen and (min-width: 992px) {
+  .swiper-button-next {
+    right: -30px;
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: "Material Icons Round";
+  font-size: 1.5rem;
+  color: #68CFC3;
+}
+@media screen and (min-width: 992px) {
+  .swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 2rem;
+  }
+}
+
+.swiper-button-prev:after {
+  content: "navigate_before";
+}
+
+.swiper-button-next:after {
+  content: "navigate_next";
+}
+
+.swiper-pagination-bullet-active {
+  background: #68CFC3;
 }
 /*# sourceMappingURL=style.css.map */
