@@ -7,22 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 検索エンジンにページをインデックスさせない -->
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex, nofollow">
     <!-- OGP -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="">
+    <meta property="og:title" content="portfolio">
     <meta property="og:url" content="">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="webコーダー転職用のポートフォリオサイトです。">
     <meta property="og:image" content="">
     <title>portfolio</title>
-    <meta name="description" content="">
+    <meta name="description" content="webコーダー転職用のポートフォリオサイトです。">
     <!-- ファビコン -->
-    <link rel="icon" type="image/png" href="">
-    <link rel="apple-touch-icon" type="image/png" href="">
-    <link rel="icon" href="">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-180px.png">
+    <link rel="icon" type="image/png" href="images/favicon-192px.png">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- swiper -->
@@ -40,11 +37,11 @@
     <div class="header__inner">
       <h1 class="header__logo logo">
         <a href="" class="logo__link">
-          <img src="" alt="" class="logo__img">
+          <img src="images/portfolio-logo_01.svg" alt="" class="logo__img">
         </a>
       </h1>
-      <button id="humburger" class="humburger">
-        <span class="humburger__line"></span>
+      <button id="hamburger" class="hamburger">
+        <span class="hamburger__line"></span>
       </button>
       <nav class="header-nav">
         <ul class="header-nav__list">
@@ -71,7 +68,10 @@
   <!--          mv          -->
   <div class="mv">
     <div class="mv__inner">
-
+      <div class="mv__title">
+        <img src="images/portfolio-logo_01.svg" alt="" class="mv__logo-main logo">
+        <img src="images/portfolio-logo_02.svg" alt="" class="mv__logo-sub logo">
+      </div>
     </div>
   </div>
   <!--          mv終わり          -->
@@ -85,16 +85,16 @@
               <h2 class="heading-lv2__main">About</h2>
               <p class="heading-lv2__sub">私について</p>
             </div>
+            <p class="section__lead">こんにちは！ご覧いただきありがとうございます。このサイトはwebコーダー転職用のポートフォリオサイトです。はじめに簡単な自己紹介をしたいと思います。</p>
           </div>
-          <div class="media">
+          <div class="media fadein">
             <figure class="media__img-wrapper">
-              <img src="" alt="" class="media__img">
+              <img src="images/image_about-top.png" alt="" class="media__img">
             </figure>
             <div class="media__body">
-              <h3 class="media__title"></h3>
+              <h3 class="media__title">山里 彰敏</h3>
               <p class="media__text">1990年生まれ。大阪府出身・在住。<br>
-                2021年5月頃からweb制作の勉強を開始。<br>
-                独学で書籍や動画教材などを利用し、スキルを徐々に獲得。<br>
+                2021年5月頃からweb制作の勉強を開始。独学で書籍や動画教材などを利用し、スキルを徐々に学ぶ。<br>
                 本格的に仕事に携わりたいと思い、ポートフォリオを制作。webコーダーを目指す。<br>
                 現職は製造業。
               </p>
@@ -109,31 +109,53 @@
               <h2 class="heading-lv2__main">Skill</h2>
               <p class="heading-lv2__sub">できること</p>
             </div>
-          </div>
-          <div class="skill__head">
-            <div class="skill__img-wrapper">
-              <img src="" alt="" class="skill__img">
-            </div>
-            <p class="skill__lead">
-              主に書籍や動画教材(Udemy)で勉強をしてきました。<br>
-              最初はHP制作の初学者用の書籍で学習を開始。HTML・CSSの基礎を学ぶ。<br>
-              1冊だけでは知識の不足、偏りがあると思い、複数冊でそれらを補いました。<br>
-              他にも、Jquery、Sass、WordPressを学習。<br>
+            <p class="section__lead">
+              主に書籍や動画教材(Udemy)で勉強をしてきました。
+              最初はHP制作の初学者用の書籍で学習を開始。HTML・CSSの基礎を学ぶ。
+              1冊だけでは知識の不足、偏りがあると思い、複数冊でそれらを補いました。
+              他にも、Jquery、Sass、WordPressを学習。
               まだまだ未熟ではありますが、これからも学習を続けていきたいと思います。
             </p>
           </div>
-          <div class="skill__body">
-            <ul class="skill-list grid grid--pc3col">
-              <li class="skill-list__item">
-                <div class="skill-list__img-wrapper">
-                  <img src="" alt="" class="skill-list__img">
-                </div>
-                <div class="skill-list__body">
-                  <p class="skill-list__text"></p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <figure class="skill__img-wrapper">
+            <img src="images/image_skill-top.png" alt="" class="skill__img">
+            <p class="skill__img-text">↑勉強で使用してきた書籍</p>
+          </figure>
+          <ul class="skill-list grid grid--pc3col">
+            <li class="skill-list__item">
+              <div class="skill-list__img-wrapper">
+                <img src="images/icon_skill_01.svg" alt="" class="skill-list__img">
+              </div>
+              <div class="skill-list__body">
+                <h3 class="skill-list__title">コーディング</h3>
+                <p class="skill-list__text">
+                  CSSの記述はSass(Dart Sass)を導入、CSS設計にBEMを採用し、効率よく管理、保守しやすい制作環境を考えました。
+                </p>
+              </div>
+            </li>
+            <li class="skill-list__item">
+              <div class="skill-list__img-wrapper">
+                <img src="images/icon_skill_02.svg" alt="" class="skill-list__img">
+              </div>
+              <div class="skill-list__body">
+                <h3 class="skill-list__title">デザイン</h3>
+                <p class="skill-list__text">
+                  Photoshop、illustrator、XDの各ツールからコーディングに必要な値やデータを取得することができます。
+                </p>
+              </div>
+            </li>
+            <li class="skill-list__item">
+              <div class="skill-list__img-wrapper">
+                <img src="images/icon_skill_03.svg" alt="" class="skill-list__img">
+              </div>
+              <div class="skill-list__body">
+                <h3 class="skill-list__title">その他</h3>
+                <p class="skill-list__text">
+                  Git(SourceTree)を使用してソースコードの管理に努めています。また、ストリーミングビルドシステムのgulpを活用して、Sassのコンパイル、ファイル編集でブラウザが自動更新されるBrowser Syncなどで制作環境の向上を目指しています。
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section id="works" class="section works">
@@ -143,18 +165,116 @@
               <h2 class="heading-lv2__main">Works</h2>
               <p class="heading-lv2__sub">制作物</p>
             </div>
+            <p class="section__lead">実務に近いかたちに慣れるため、デザインカンプからコーディングをしました。デザインデータは<a href="https://webdesigner-go.com/coding-practice/" target="_blank">『無料コーディング練習所』</a>様より、お借りしました。</p>
           </div>
-          <div class="section__lead">
-            <p class="section__text"></p>
-          </div>
-          <div class="works-list">
-            <div class="media">
-              <figure class="media__img-wrapper">
-                <img src="" alt="" class="media__img">
-              </figure>
-              <div class="media__body">
-                <h3 class="media__title"></h3>
-                <p class="media__text"></p>
+          <div class="works-media-list">
+            <div class="works-media">
+              <div class="works-media__head">
+                <figure class="works-media__img-wrapper">
+                  <img src="images/image_works-media_01.png" alt="" class="works-media__img">
+                </figure>
+                <div class="works-media__btn-area">
+                  <div class="works-media__btn works-media__btn--center">
+                    <a href="https://github.com/aki104-y/portfolio" class="btn" target="_blank">ソースコードを見る</a>
+                  </div>
+                </div>
+                <div class="works-media__info">
+                  <div class="works-media__info-title">Basic認証</div>
+                  <div class="works-media__password">
+                    ユーザー名：aaa<br>
+                    パスワード：bbb
+                  </div>
+                </div>
+              </div>
+              <div class="works-media__body">
+                <h3 class="works-media__title">制作期間</h3>
+                <p class="works-media__text">50時間(デザインの構想、制作含め)</p>
+                <h3 class="works-media__title">コメント</h3>
+                <p class="works-media__text">今ご覧いただいている、私自身のポートフォリオサイトです。自分がどんな人間か、どのようなweb制作スキルを持っているかを伝えれるように制作しました。サイトのデザインは自分で行いました。サイトロゴはillustratorで作成。MVの画像は自宅の作業環境の写真をCLIP STUDIO PAINTで加工。イラストアイコンは<a href="https://www.manypixels.co/gallery" class="" target="_blank">『ManyPixels』</a>様からお借りしました。</p>
+              </div>
+            </div>
+            <div class="works-media">
+              <div class="works-media__head">
+                <figure class="works-media__img-wrapper">
+                  <img src="images/image_works-media_02.png" alt="" class="works-media__img">
+                </figure>
+                <div class="works-media__btn-area">
+                  <div class="works-media__btn">
+                    <a href="" class="btn">サイトを見る</a>
+                  </div>
+                  <div class="works-media__btn">
+                    <a href="https://github.com/aki104-y/PON-DESIGN" class="btn" target="_blank">ソースコードを見る</a>
+                  </div>
+                </div>
+                <div class="works-media__info">
+                  <div class="works-media__info-title">Basic認証</div>
+                  <div class="works-media__password">
+                    ユーザー名：aaa<br>
+                    パスワード：bbb
+                  </div>
+                </div>
+              </div>
+              <div class="works-media__body">
+                <h3 class="works-media__title">制作期間</h3>
+                <p class="works-media__text">70時間</p>
+                <h3 class="works-media__title">コメント</h3>
+                <p class="works-media__text">8ページの企業サイトです。ハンバーガーメニュー、メディア型レイアウト、カード型レイアウトなど、よくあるデザインの実装をしました。ページ数が複数あるので、使い回しの効くようなコンポーネントを意識してコーディングしました。</p>
+              </div>
+            </div>
+            <div class="works-media">
+              <div class="works-media__head">
+                <figure class="works-media__img-wrapper">
+                  <img src="images/image_works-media_03.png" alt="" class="works-media__img">
+                </figure>
+                <div class="works-media__btn-area">
+                  <div class="works-media__btn">
+                    <a href="" class="btn">サイトを見る</a>
+                  </div>
+                  <div class="works-media__btn">
+                    <a href="https://github.com/aki104-y/WORK-REVOLUTION" class="btn" target="_blank">ソースコードを見る</a>
+                  </div>
+                </div>
+                <div class="works-media__info">
+                  <div class="works-media__info-title">Basic認証</div>
+                  <div class="works-media__password">
+                    ユーザー名：aaa<br>
+                    パスワード：bbb
+                  </div>
+                </div>
+              </div>
+              <div class="works-media__body">
+                <h3 class="works-media__title">制作期間</h3>
+                <p class="works-media__text">35時間</p>
+                <h3 class="works-media__title">コメント</h3>
+                <p class="works-media__text">1ページのセミナーの特設ページサイトです。フォーム、ページ内スクロール、ページトップへ戻るなどの機能を実装。SP版のデザインがないので、違和感のないようにデザイン、コーディングしました。</p>
+              </div>
+            </div>
+            <div class="works-media">
+              <div class="works-media__head">
+                <figure class="works-media__img-wrapper">
+                  <img src="images/image_works-media_04.png" alt="" class="works-media__img">
+                </figure>
+                <div class="works-media__btn-area">
+                  <div class="works-media__btn">
+                    <a href="" class="btn">サイトを見る</a>
+                  </div>
+                  <div class="works-media__btn">
+                    <a href="https://github.com/aki104-y/Body-Make-English" class="btn" target="_blank">ソースコードを見る</a>
+                  </div>
+                </div>
+                <div class="works-media__info">
+                  <div class="works-media__info-title">Basic認証</div>
+                  <div class="works-media__password">
+                    ユーザー名：aaa<br>
+                    パスワード：bbb
+                  </div>
+                </div>
+              </div>
+              <div class="works-media__body">
+                <h3 class="works-media__title">制作期間</h3>
+                <p class="works-media__text">60時間</p>
+                <h3 class="works-media__title">コメント</h3>
+                <p class="works-media__text">1ページのパーソナルジムのサイトです。スライダーの箇所はJavaScriptライブラリのSwiperを使用。MVのテキスト部分のアニメーションは <a href="https://coco-factory.jp/ugokuweb/move02/8-12/" class="" target="_blank">『動くWebデザインアイデア帳』</a> 様のコードを参考に実装しました。カード型レイアウトの画像をタブで切り替えてからフェードインさせる部分に苦戦しました。</p>
               </div>
             </div>
           </div>
@@ -167,10 +287,7 @@
               <h2 class="heading-lv2__main">Vision</h2>
               <p class="heading-lv2__sub">展望</p>
             </div>
-          </div>
-          <div class="vision__heading">
-            <h3 class="vision__title"></h3>
-            <p class="vision__lead"></p>
+            <p class="section__lead">入社後のキャリアビジョンです。目標を設定して、実務を重ねながら行動します。</p>
           </div>
           <div class="vision__swiper">
             <div class="swiper-container">
@@ -180,14 +297,14 @@
                     <div class="swiper-slide-inner1">
                       <div class="vision-media">
                         <figure class="vision-media__img-wrapper">
-                          <img src="" alt="" class="vision-media__img">
+                          <img src="images/icon_vision_01.svg" alt="" class="vision-media__img">
                         </figure>
                         <div class="vision-media__body">
                           <h3 class="vision-media__title"><span class="vision-media__title-emphasis">3</span>ヶ月後には…！</h3>
                           <ul class="vision-media__list">
-                            <li class="vision-media__item">全体的な業務の流れやルールを把握</li>
-                            <li class="vision-media__item">社内の人たちとうまくコミュニケーションできているようになる</li>
-                            <li class="vision-media__item">仕事のキャリアのロードマップ(目標)を見つける</li>
+                            <li class="vision-media__item">全体的な業務の流れやルールを把握。</li>
+                            <li class="vision-media__item">社内の人たちとうまくコミュニケーションできているようになる。</li>
+                            <li class="vision-media__item">仕事のキャリアのロードマップ(目標)を見つける。</li>
                           </ul>
                         </div>
                       </div>
@@ -197,14 +314,14 @@
                     <div class="swiper-slide-inner2">
                       <div class="vision-media">
                         <figure class="vision-media__img-wrapper">
-                          <img src="" alt="" class="vision-media__img">
+                          <img src="images/icon_vision_02.svg" alt="" class="vision-media__img">
                         </figure>
                         <div class="vision-media__body">
                           <h3 class="vision-media__title"><span class="vision-media__title-emphasis">6</span>ヶ月後には…！</h3>
                           <ul class="vision-media__list">
-                            <li class="vision-media__item">業務の効率化を自分なりに取り組む</li>
-                            <li class="vision-media__item">web制作、業界の話の輪の中に入れるようになる</li>
-                            <li class="vision-media__item">ロードマップに対して行動したり、内容を更新したりする</li>
+                            <li class="vision-media__item">業務の効率化を自分なりに取り組む。</li>
+                            <li class="vision-media__item">web制作、業界の話の輪の中に入れるようになる。</li>
+                            <li class="vision-media__item">ロードマップに対して行動したり、内容を更新したりする。</li>
                           </ul>
                         </div>
                       </div>
@@ -214,14 +331,14 @@
                     <div class="swiper-slide-inner3">
                       <div class="vision-media">
                         <figure class="vision-media__img-wrapper">
-                          <img src="" alt="" class="vision-media__img">
+                          <img src="images/icon_vision_03.svg" alt="" class="vision-media__img">
                         </figure>
                         <div class="vision-media__body">
                           <h3 class="vision-media__title"><span class="vision-media__title-emphasis">1</span>年後には…！</h3>
                           <ul class="vision-media__list">
-                            <li class="vision-media__item">業務の改善案を提案できるようになる</li>
-                            <li class="vision-media__item">先輩、後輩問わず社内で頼られたり力になったりできるようになる</li>
-                            <li class="vision-media__item">コーダーとしての力はもちろん、+α（プラスアルファ）でロードマップの内容も身につけている</li>
+                            <li class="vision-media__item">業務の改善案を提案できるようになる。</li>
+                            <li class="vision-media__item">先輩、後輩問わず社内で頼られたり力になったりできるようになる。</li>
+                            <li class="vision-media__item">コーダーの力はもちろん、プラスαでロードマップの内容も身につけている。</li>
                           </ul>
                         </div>
                       </div>
@@ -243,42 +360,42 @@
               <h2 class="heading-lv2__main">Contact</h2>
               <p class="heading-lv2__sub">お問い合わせ</p>
             </div>
+            <p class="section__lead">最後までご覧いただき,ありがとうございました。何かありましたら、下のフォームからご連絡ください。</p>
           </div>
-          <div class="section__lead">
-            <p class="section__text"></p>
-          </div>
-          <div class="form-container">
-            <form action="#">
-              <div class="form">
-                <div class="form__item">
-                  <label for="username" class="form__ttl">お名前<strong class="label-required">必須</strong></label>
-                  <div class="form__body">
-                    <div class="inputField inputField--half">
-                      <input type="text" name="username" id="username" required>
+          <div class="contact__body">
+            <div class="form-container">
+              <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdxbnd2rTGCZj3IVnj03BcJd32uAQrjtjIuBHGo6EvdAeKxSA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="form">
+                  <div class="form__item">
+                    <label for="username" class="form__ttl">お名前<strong class="label-required">必須</strong></label>
+                    <div class="form__body">
+                      <div class="inputField inputField--half">
+                        <input type="text" name="entry.1716598611" id="username" required>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="form__item">
-                  <label for="email" class="form__ttl">メールアドレス<strong class="label-required">必須</strong></label>
-                  <div class="form__body">
-                    <div class="inputField">
-                      <input type="email" name="email" id="email" required>
+                  <div class="form__item">
+                    <label for="email" class="form__ttl">メールアドレス<strong class="label-required">必須</strong></label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <input type="email" name="entry.1990078070" id="email" required>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="form__item">
-                  <label for="message" class="form__ttl">お問い合わせ内容</label>
-                  <div class="form__body">
-                    <div class="inputField">
-                      <textarea id="message" name="message" placeholder="お問い合わせ内容"></textarea>
+                  <div class="form__item">
+                    <label for="message" class="form__ttl">お問い合わせ内容</label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <textarea id="message" name="entry.887606709" placeholder="お問い合わせ内容"></textarea>
+                      </div>
                     </div>
                   </div>
+                  <div class="form__btn">
+                    <button type='submit' class="btn">送信する</button>
+                  </div>
                 </div>
-                <div class="form__btn">
-                  <button type='submit' class="btn">送信する</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -288,12 +405,39 @@
   <!--        フッター        -->
   <footer class="footer">
     <div class="footer__inner">
-      <small class="copyright">&copy;</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#about">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#skill">Skill</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#works">Works</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#vision">Vision</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <small class="footer-copyright">&copy;2022 Akitoshi Yamazato</small>
     </div>
   </footer>
   <!--        フッター終わり       -->
+  <div class="page-top">
+    <a href="#" class="page-top__link"></a>
+  </div>
   <script src="common/js/jquery-3.6.0.min.js"></script>
   <script src="common/js/script.js"></script>
+  <!--       フォームのサンクスページに飛ぶ        -->
+  <script type="text/javascript">
+    var submitted = false;
+  </script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
 </body>
 
 </html>
